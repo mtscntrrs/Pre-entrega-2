@@ -1,0 +1,43 @@
+.card {
+    margin-top: 50px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .card-img-top {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .map-container {
+        height: 300px;
+        /* Altura del contenedor del mapa */
+        margin-top: 20px;
+        /* Espacio entre la tarjeta y el mapa */
+
+        @media (min-width: 768px) {
+            position: absolute;
+            /* Posición absoluta para superponer el mapa en pantallas grandes */
+            top: 0;
+            right: calc(50% + 30px);
+            /* Posicionamiento para colocar el mapa junto a la tarjeta */
+            margin-top: 0;
+        }
+    }
+}
